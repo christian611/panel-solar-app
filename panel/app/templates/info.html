@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Panel Solar</title>
+		<link rel="stylesheet" href="styles.css" />
+    </head>
+	</head>
+	<body>
+	<!-- Centrer link-->
+
+
+	 <div class="container text-center">
+		<h4><a href="/">Volver al Index</a></h4>
+	</div>	
+
+	<main class="main-content">	
+		<section class="container blogs">
+			<h3>Indicaciones de Sistema Fotovoltaico</h3>
+<p>Forma de manejar aplicacion y ejecutable para hacer opercaciones
+ y guardar informacion del sistema</p>
+			<div class="container-blogs">
+				<div class="card-blog">
+				<div class="container text-center">
+					<div class="container-img">
+						<img src="static/blog-1.jpeg" alt="Imagen Blog 1" />
+					</div>
+				</div>
+					<div class="content-blog">
+<h3>Iniciamos</h3>
+<p>
+Factor de energía de cada mes, el menor factor de energía nos muestra cual es el peor mes, en ese peor mes se toma el valor de energía que es el que se va a utilizar con el proceso de dimensionamiento del panel solar o numero de paneles solares, el mes de mayor consumo de energía el peor escenario </p>
+						<h3>Rendimiento de la Histalacion</h3>
+						<h4>Formula</h4>
+						
+						<pre>R = 1 - [ ( 1 - b - c - v ) a * N / pd ] - b - c - v </pre>
+<p>Determina el numero de paneles solares.</p>
+						<p>Perdidas en la instalacion, por ejemplo un panele genera 6000 wh (vatios hora) no todala energia 
+						llega completa a la vivienda. </p>	
+						<p>La vivienda tiene equipos conductores que tienen perdidas.</p>		
+<h4>Variable de exprecion</h4>
+												
+<p>b: Coeficiente de perdidas por rendimientoen la bateria.</p>
+<p>0.05 si no se precisan descargar fuertes.</p>
+<p>0.1 para consumo muy desfavorable, descargas de energia fuertes ejemplo una licuadora industrial. </p>
+
+<p>c: Coeficiente de perdidas por rendimiento en la bateria.</p>
+<p>0.2 para inversores senoidales (convierte corriente continua, en corriente alterna es crucial para el rendimiento del sistema y la compatibilidad con los equipos eléctricos conectados).</p>
+<p>para inversores de ondas cuadradas.</p>
+
+<p>v:  Coeficiente de otras perdidas.</p>
+<p>-Perdida en los cables.
+-Perdidas entre las conexiones.
+-Proteccion en las instalciones como plastico y otros.
+-fucibles.</p>
+<p>0.15  Valor muy usado.</p>
+<p>0.05  valor minimo.</p>
+
+<p>a:  Coeficiente de descarga, descarga natural de la bateria aunque no halla uso de esta por las caracteristicas interna de la pila
+es decir 0,005 o lo mismo %05. </p>
+
+<p>N: dias de autonomia, dias en que la instalacion se sostiene sola sin radiacion solar, ejemplo cuando hay dias nublados.
+El sistema sigue entregando energia atraves de las baterias o fuente de energia.</p>
+
+<p>Pd: Profundidad de descarga</p>
+<p>0.5 Maximo de energia que entrega cada bateria.</p>
+<p>La bateria solo entrega el 50% y no entrega mas para proteger la fuente de energia.</p>							
+						
+<h4>Remplazamos Formula</h4>
+<p>Remplazamos los valores de la formula con los valores mas usados.</p> 
+<pre>R = 1 -[ ( 1- 0.1 - 0.2 - 0.15 ) 0.005 * 2 / 0.5 ] - 0.1 - 0.2 - 0.15</pre>
+<pre>R = 0.539</pre>
+<p>R: Rendimiento, para saber las perdidas. No toda la energia llega completa a la casa.</p>
+<p>E: Suplir la energia que se pierde. para hacer la operacion de suplir energia perdida mirar ejecutable.</p>						
+					</div>
+				
+				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+				<a class="btn btn-primary" href="https://github.com/christian611/Descargar_Ejecutable">Ejecutable</a>
+<p>El boton ejecutable nos lleva a un repositorio github donde descargamos un archivo .exe e instalamos en el sistema, nos permite hacer todas las operaciones porcentlaes para almacenar la informacion en la aplicacion y nos ayuda a saber la energia necesaria para la instalacion del panel.</p>
+<p>Esta informacion debe tener cuidado al guardarse, esta informacion nos permite tener los detalles del sitema para poder usarlo con eficiencia y llevar un control.</p>  
+
+				</div>
+			</div>							
+		</section>
+	</main>
+	</body>
+</html>
